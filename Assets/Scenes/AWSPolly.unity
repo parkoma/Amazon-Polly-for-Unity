@@ -977,9 +977,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Voice: {fileID: 1534521312}
-  cognitoCredentials: ap-northeast-1:2e77f6ff-5618-4ecb-8d8d-60c78445abcc
-  speech: Hello world! This is a sample text used to test AWSPolly for Unity 2017.3.0.
-    Hope this help you guys
+  cognitoCredentials: <your-cognito-credentials>
+  speech: Hello World!
   voice: Matthew
 --- !u!4 &1073874355
 Transform:
