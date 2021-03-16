@@ -1,4 +1,4 @@
-# Unity Polly
+# Unity AWS Polly
  AWS(Amazon Web Service) Polly for Unity
 
 1. Get Cognito Credential from Cognito Window.
@@ -6,4 +6,4 @@
 3. Play it.
 
 
-It Works on Android but I dont know it works on IOS. This Project based on Net Standard 2.0.
+It Works on Android but I dont know it works on IOS. This Project based on .Net Standard 2.0
