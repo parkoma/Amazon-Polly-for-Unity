@@ -1,2 +1,6 @@
 *Library/
 *Temp/
+*.apk
+*Packages/
+*Logs/
+*obj/

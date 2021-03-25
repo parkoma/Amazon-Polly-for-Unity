@@ -1,21 +1,36 @@
 <linker>
-<!-- if you are using AWSConfigs.HttpClient.UnityWebRequest option-->
-<assembly fullname="UnityEngine">
+  <!-- if you are using AWSConfigs.HttpClient.UnityWebRequest option-->
+  <assembly fullname="UnityEngine">
     <type fullname="UnityEngine.Networking.UnityWebRequest" preserve="all" />
     <type fullname="UnityEngine.Networking.UploadHandlerRaw" preserve="all" />
     <type fullname="UnityEngine.Networking.UploadHandler" preserve="all" />
     <type fullname="UnityEngine.Networking.DownloadHandler" preserve="all" />
     <type fullname="UnityEngine.Networking.DownloadHandlerBuffer" preserve="all" />
-</assembly>
-<assembly fullname="mscorlib">
+  </assembly>
+  <assembly fullname="mscorlib">
     <namespace fullname="System.Security.Cryptography" preserve="all"/>
-</assembly>
-<assembly fullname="System">
+  </assembly>
+  <assembly fullname="System">
     <namespace fullname="System.Security.Cryptography" preserve="all"/>
-</assembly>
-<assembly fullname="AWSSDK.Core" preserve="all"/>
-<assembly fullname="AWSSDK.CognitoIdentity" preserve="all"/>
-<assembly fullname="AWSSDK.SecurityToken" preserve="all"/>
-<assembly fullname="AWSSDK.CognitoSync" preserve="all"/>
-<assembly fullname="AWSSDK.Polly" preserve="all"/>
+  </assembly>
+  <assembly fullname="AWSSDK.Core" preserve="all"/>
+  <assembly fullname="AWSSDK.CognitoIdentity" preserve="all"/>
+  <assembly fullname="AWSSDK.SecurityToken" preserve="all"/>
+  <assembly fullname="AWSSDK.CognitoSync" preserve="all"/>
+  <assembly fullname="AWSSDK.Polly" preserve="all"/>
+  <assembly fullname="Microsoft.Bcl.AsyncInterfaces" preserve="all"/>
+  <assembly fullname="System.Runtime.CompilerServices.Unsafe" preserve="all"/>
+  <assembly fullname="System.Threading.Tasks.Extensions" preserve="all"/>
+  <assembly fullname="AWSSDK.Core">
+    <namespace fullname="Amazon.Util.Internal.PlatformServices" preserve="all"/>
+  </assembly>
+  <assembly fullname="AWSSDK.CognitoIdentity">
+    <namespace fullname="Amazon.Util.Internal.PlatformServices" preserve="all"/>
+  </assembly>
+  <assembly fullname="AWSSDK.CognitoSync">
+    <namespace fullname="Amazon.Util.Internal.PlatformServices" preserve="all"/>
+  </assembly>
+  <assembly fullname="AWSSDK.SecurityToken">
+    <namespace fullname="Amazon.Util.Internal.PlatformServices" preserve="all"/>
+  </assembly>
 </linker>

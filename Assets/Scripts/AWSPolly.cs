@@ -54,7 +54,7 @@ public class AWSPolly : MonoBehaviour {
 
             var audio = await client.SynthesizeSpeechAsync(synthesizeSpeechPresignRequest);  //Polly 결과값 받아오기
 
-            audio_path = Application.persistentDataPath + (int)(System.DateTime.UtcNow.Subtract(new System.DateTime(1970, 1, 1))).TotalSeconds + ".mp3";  //오디오 패스 설정
+            audio_path = Application.persistentDataPath + "/" + (int)(System.DateTime.UtcNow.Subtract(new System.DateTime(1970, 1, 1))).TotalSeconds + ".mp3";  //오디오 패스 설정
             using (FileStream fileStream = File.Create(audio_path))
             {
                 CopyTo(audio.AudioStream, fileStream);  //오디오 패스에 mp3 저장
@@ -68,7 +68,7 @@ public class AWSPolly : MonoBehaviour {
 
     IEnumerator PlayAudioClip(string audio_path)
     {
-        using (UnityWebRequest www = UnityWebRequestMultimedia.GetAudioClip("file:///" + audio_path, AudioType.OGGVORBIS))  //오디오 클립 가져오기
+        using (UnityWebRequest www = UnityWebRequestMultimedia.GetAudioClip("file://" + audio_path, AudioType.OGGVORBIS))  //오디오 클립 가져오기
         {
             yield return www.SendWebRequest();
 
