@@ -6,4 +6,4 @@
 3. Play it.
 
 
-It Works on Android but I dont know it works on IOS. This Project based on .Net Standard 2.0
+It Works on Android but I dont know it works on IOS. This Project based on .Net Standard 2.0 (.Net 4.X also worked)
